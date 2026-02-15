@@ -1,0 +1,7 @@
+notebook==7.4.7
+pandas==2.3.3
+scikit-learn==1.7.2
+matplotlib==3.10.7
+pydot==4.0.1
+bayesian-optimization==3.1.0
+tensorflow==2.20.0

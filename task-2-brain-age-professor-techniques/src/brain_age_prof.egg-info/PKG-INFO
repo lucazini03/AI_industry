@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: brain-age-prof
+Version: 0.1.0
+Summary: Brain age prediction with GP imputation, SHAP, permutation importance, and Boruta selection
+Requires-Python: >=3.10
+Requires-Dist: numpy>=1.26
+Requires-Dist: pandas>=2.1
+Requires-Dist: scikit-learn>=1.4
+Requires-Dist: scipy>=1.11
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: shap>=0.49.1
+Requires-Dist: boruta>=0.4.3

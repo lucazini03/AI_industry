@@ -1,0 +1,6 @@
+hidden_sizes:
+- 16
+input_size: 1
+lr: 0.001
+name: pfl_nl
+output_size: 20

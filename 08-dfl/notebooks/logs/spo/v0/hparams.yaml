@@ -1,0 +1,84 @@
+dfl_max_workers: null
+dfl_method: spo
+dfl_params: {}
+dfl_tlim: null
+drop_cache_at_end: false
+hidden_sizes: []
+input_size: 1
+lr: 0.0001
+name: spo
+output_size: 20
+problem: !!python/object:util.util.ProductionProblem
+  requirement: !!python/object/apply:numpy._core.multiarray.scalar
+  - &id001 !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    Y8g/0V+pJ0A=
+  values: !!python/object/apply:numpy._core.multiarray._reconstruct
+    args:
+    - !!python/name:numpy.ndarray ''
+    - !!python/tuple
+      - 0
+    - !!binary |
+      Yg==
+    state: !!python/tuple
+    - 1
+    - !!python/tuple
+      - 20
+    - *id001
+    - false
+    - !!binary |
+      MYgJg6Vl8j93xFh7phX2P6oUBoNMr/Q/8AhHkdfU8z8T6PT1nv/wP5F5FNiU//A/3g1eCCpf8D8k
+      i3ebJIv1PyMP6ujd2PM/5+YeKhuI9D/KwD7DuSHwP1SqYK0ZNfY/ZGrzv99T9T87j2Z65VvxP9ya
+      MevmKfE/nUJLbX0s8T/X3RZyePLxP0c/zszCW/M/Vuw337LD8j+139FaJt3xPw==
+warm_start_state_dict: !!python/object/apply:collections.OrderedDict
+- - - model.0.weight
+    - !!python/object/apply:torch._utils._rebuild_tensor_v2
+      - !!python/object/apply:torch.storage._load_from_bytes
+        - !!binary |
+          gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+          AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+          aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+          Z2UKcQFYCwAAADMzMDA1MDQzOTA0cQJYAwAAAGNwdXEDSxROdHEEUS6AAl1xAFgLAAAAMzMwMDUw
+          NDM5MDRxAWEuFAAAAAAAAABx1uU+G6SMP8avY7/2sQ4/y0kgPwAlGD/nLyW/cOxSv4OGHT/8ey+/
+          XS5dP9RgFT881CE/AUg7PzOfUz+Unom/3EkfP4VjVj80dkQ/8WbhPg==
+      - 0
+      - !!python/tuple
+        - 20
+        - 1
+      - !!python/tuple
+        - 1
+        - 1
+      - false
+      - !!python/object/apply:collections.OrderedDict
+        - []
+  - - model.0.bias
+    - !!python/object/apply:torch._utils._rebuild_tensor_v2
+      - !!python/object/apply:torch.storage._load_from_bytes
+        - !!binary |
+          gAKKCmz8nEb5IGqoUBkugAJN6QMugAJ9cQAoWBAAAABwcm90b2NvbF92ZXJzaW9ucQFN6QNYDQAA
+          AGxpdHRsZV9lbmRpYW5xAohYCgAAAHR5cGVfc2l6ZXNxA31xBChYBQAAAHNob3J0cQVLAlgDAAAA
+          aW50cQZLBFgEAAAAbG9uZ3EHSwR1dS6AAihYBwAAAHN0b3JhZ2VxAGN0b3JjaApGbG9hdFN0b3Jh
+          Z2UKcQFYCwAAADMzMDA1MTc0NDMycQJYAwAAAGNwdXEDSxROdHEEUS6AAl1xAFgLAAAAMzMwMDUx
+          NzQ0MzJxAWEuFAAAAAAAAABxQ40+BGOWPXXbPj9ZZKM+mXFsPvW1lj6EKFY/C5FoP+oSXz3OmU0/
+          DVwZvdQ7lz1L39A9yMH5PY3LUb3tVoY/KeG/uw8YGT6VD/+82Is+Pg==
+      - 0
+      - !!python/tuple
+        - 20
+      - !!python/tuple
+        - 1
+      - false
+      - !!python/object/apply:collections.OrderedDict
+        - []
