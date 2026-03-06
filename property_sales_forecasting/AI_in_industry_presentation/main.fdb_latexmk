@@ -1,0 +1,15 @@
+# Fdb version 4
+["pdflatex"] 1772814553.49871 "/home/lucazini03/Desktop/ai_in_industry/property_sales_forecasting/AI_in_industry_presentation/main.tex" "main.pdf" "main" 1772814553.61373 2
+  "/etc/texmf/web2c/texmf.cnf" 1772814475.72667 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/lucazini03/Desktop/ai_in_industry/property_sales_forecasting/AI_in_industry_presentation/main.tex" 1772810618 12840 868be60398b19642031154a8d96230ea ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1772814492 6800799 dcfba2c5fa15f0db0c8d960edc4c9577 ""
+  "beamer.cls" 0 -1 0 ""
+  "main.aux" 1772814553.49657 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.tex" 1772810618 12840 868be60398b19642031154a8d96230ea ""
+  (generated)
+  "main.aux"
+  "main.log"
+  "main.pdf"
+  (rewritten before read)

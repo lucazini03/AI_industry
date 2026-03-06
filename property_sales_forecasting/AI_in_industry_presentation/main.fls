@@ -1,0 +1,7 @@
+PWD /home/lucazini03/Desktop/ai_in_industry/property_sales_forecasting/AI_in_industry_presentation
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
+INPUT /home/lucazini03/Desktop/ai_in_industry/property_sales_forecasting/AI_in_industry_presentation/main.tex
+OUTPUT main.log

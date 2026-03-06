@@ -1,0 +1,3 @@
+avg_price_by_type = df.groupby('type')['price'].
+    mean().sort_values(ascending=False)
+

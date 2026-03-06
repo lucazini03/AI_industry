@@ -1,0 +1,40 @@
+\mode<presentation>
+
+% Now Define the margin quantities
+% This will be used for the titles and the itemization
+\newlength { \beamer@unibotesi@margin }
+\setlength \beamer@unibotesi@margin { 0.065 \paperwidth }
+\setbeamersize { text margin left = \beamer@unibotesi@margin }
+\setbeamersize { text margin right = \beamer@unibotesi@margin }
+\setlength \leftmargini {0.6 \beamer@unibotesi@margin }
+\setlength \leftmarginii {0.6 \beamer@unibotesi@margin }
+\setlength \leftmarginiii {0.6 \beamer@unibotesi@margin }
+
+
+
+% now define the titlepage
+% it is formatted as unibo requires
+
+
+\defbeamertemplate*{title page}{unibotesi}[1]{
+
+  \begin{beamercolorbox}[center, wd=.8\paperwidth, ht=.1\paperwidth]{}
+
+    \color{bostonuniversityred}{\usebeamerfont{title}\textbf{\Large\inserttitle}}\par%
+
+    \ifx\insertsubtitle\@empty%
+    \else%
+      \strut \large \insertsubtitle \strut \par%
+    \fi%
+
+  \end{beamercolorbox}
+
+  \begin{beamercolorbox}[center, wd=.8\paperwidth, ht=.1\paperwidth]{}
+
+    \textbf{Luca Corradini Zini}
+    
+  \end{beamercolorbox}
+
+}
+
+\mode<all>

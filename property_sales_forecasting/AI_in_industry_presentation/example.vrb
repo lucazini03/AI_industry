@@ -1,0 +1,5 @@
+\frametitle{Distribution of property prices}
+\begin{lstlisting}[language=Python, basicstyle=\small\ttfamily]
+avg_price_by_type = df.groupby('type')['price']. \
+    mean().sort_values(ascending=False)
+    \end{lstlisting}

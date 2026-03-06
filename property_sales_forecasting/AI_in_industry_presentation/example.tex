@@ -1,0 +1,597 @@
+\documentclass[slidescentered]{beamer}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\usetheme{UniboTesi}
+
+\title{Artificial Intelligence in Industry Project}
+\subtitle{Forecasting Median House Prices}
+\date{\today}
+\department{Computer Science and Engineering}
+\degree{Master Degree in Artificial Intelligence}
+
+\begin{document}
+
+%------------------------------------------------
+\begin{frame}[noframenumbering]
+    \titlepage
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Project Objective}
+
+    \begin{itemize}
+
+        \item Predict monthly median house prices using historical property sales data
+        \item Data source: \href{https://www.kaggle.com/datasets/htagholdings/property-sales}{Kaggle property sales time series dataset}
+
+        \item Understand which factors drive price dynamics over time
+
+        \item Compare multiple forecasting approaches:
+              \begin{itemize}
+                  \item Random Forest
+                  \item LSTM Neural Networks
+                  \item SARIMAX Time Series Models
+              \end{itemize}
+
+        \item Investigate unexpected model behaviour and improve the feature space
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Dataset}
+
+    \begin{itemize}
+
+        \item Data source: Kaggle property sales dataset
+
+        \item Time span: 2007 -- 2019
+
+        \item Each observation corresponds to a property sale
+
+        \item Key variables:
+
+              \begin{itemize}
+                  \item sale date
+                  \item property price
+                  \item property type (house / unit)
+                  \item number of bedrooms
+                  \item postcode
+              \end{itemize}
+
+        \item Goal: predict a \textbf{monthly time series of housing prices}
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Project outline}
+
+    \begin{itemize}
+        \item Problem \& dataset
+        \item Extensive EDA
+        \item Data issues and preprocessing (missing values and outliers)
+        \item Feature engineering
+        \item ML models evaluation (RF, LSTM, SARIMAX)
+        \item Feature importance analysis
+        \item Observations of results and hypothesis exploration
+    \end{itemize}
+
+\end{frame}
+%------------------------------------------------
+
+
+\begin{frame}{Dataset}
+    \addtolength{\tabcolsep}{-4.5pt}
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        \textbf{Index} & \textbf{datesold} & \textbf{postcode} & \textbf{price} & \textbf{propertyType} & \textbf{bedrooms} \\ \hline
+        0              & 2007-02-07        & 2607              & 525000         & house                 & 4                 \\ \hline
+        1              & 2007-02-27        & 2906              & 290000         & house                 & 3                 \\ \hline
+        2              & 2007-03-07        & 2905              & 328000         & house                 & 3                 \\ \hline
+        3              & 2007-03-09        & 2905              & 380000         & house                 & 4                 \\ \hline
+        4              & 2007-03-21        & 2906              & 310000         & house                 & 3                 \\ \hline
+    \end{tabular}
+    \vspace{1.5em}
+    \begin{itemize}
+
+        \item Each row corresponds to a transaction
+
+        \item Dataset contains thousands of observations
+
+        \item Time information allows the construction of temporal features
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Exploratory Data Analysis}
+
+    Goals of the EDA:
+
+    \begin{itemize}
+
+        \item Understand distributions
+
+        \item Identify missing values or anomalies
+
+        \item Study relationships between features
+
+        \item Identify potential predictive variables
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Distribution of Property Prices}
+
+    %image
+    \begin{center}
+    \includegraphics[width=1\textwidth]{../imgs/distribution_price.png}
+    \end{center}
+
+    \begin{itemize}
+
+        \item Prices are strongly right-skewed
+
+        \item Presence of very expensive properties
+
+        \item Outliers may affect machine learning models
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[fragile]{Distribution of property prices}
+    \begin{lstlisting}[language=Python, basicstyle=\small\ttfamily]
+avg_price_by_type = df.groupby('type')['price']. \
+    mean().sort_values(ascending=False)
+    \end{lstlisting}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Missing values}
+    The entries where
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{Outlier Handling}
+
+    We explored different strategies:
+
+    \begin{itemize}
+
+        \item Keep data unchanged
+
+        \item Remove extreme values using IQR rule
+
+        \item Apply logarithmic transformation
+
+    \end{itemize}
+
+    These approaches were tested during model evaluation.
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Average Price by Property Type}
+
+    \begin{itemize}
+
+        \item Houses tend to be more expensive than units
+
+        \item Property type is therefore an important explanatory feature
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Average Price by Number of Bedrooms}
+
+    \begin{itemize}
+
+        \item Moderate positive relationship
+
+        \item Larger properties generally sell at higher prices
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Feature Correlation}
+
+    \begin{itemize}
+
+        \item Bedrooms show moderate correlation with price
+
+        \item Suggests structural characteristics of houses affect price
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{From Transactions to Time Series}
+
+    Individual sales were aggregated into monthly statistics:
+
+    \begin{itemize}
+
+        \item median price
+
+        \item number of sales
+
+        \item average bedrooms
+
+        \item ratio of houses vs units
+
+    \end{itemize}
+
+    This creates a \textbf{structured monthly dataset} suitable for forecasting.
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Monthly Price Time Series}
+
+    \begin{itemize}
+
+        \item Clear long-term upward trend
+
+        \item Potential seasonal fluctuations
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Seasonal Decomposition}
+
+    \begin{itemize}
+
+        \item Trend component shows long-term price increase
+
+        \item Seasonal component suggests annual cycles
+
+        \item Residual captures irregular fluctuations
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Feature Engineering}
+
+    Additional temporal features were introduced:
+
+    \begin{itemize}
+
+        \item Month encoded as cyclical variables
+              \begin{itemize}
+                  \item month\_sin
+                  \item month\_cos
+              \end{itemize}
+
+        \item Scaled year variable representing long-term trend
+
+    \end{itemize}
+
+    This helps machine learning models capture seasonality.
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Modeling Approaches}
+
+    Three families of models were explored:
+
+    \begin{itemize}
+
+        \item Random Forest Regressor
+
+        \item LSTM Neural Networks
+
+        \item SARIMAX Time Series Model
+
+    \end{itemize}
+
+    Each model captures temporal structure differently.
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Random Forest Model}
+
+    Key predictive variables:
+
+    \begin{itemize}
+
+        \item number of sales
+
+        \item average bedrooms
+
+        \item house ratio
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Feature Importance}
+
+    Most influential predictors:
+
+    \begin{itemize}
+
+        \item sales volume
+
+        \item property composition
+
+        \item housing characteristics
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{LSTM Neural Network}
+
+    \begin{itemize}
+
+        \item Sequential neural network
+
+        \item Captures temporal dependencies
+
+        \item Uses previous months as input sequence
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{SARIMAX Model}
+
+    \begin{itemize}
+
+        \item Traditional statistical time series model
+
+        \item Handles trend and seasonality explicitly
+
+        \item Allows additional exogenous variables
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Unexpected Observation}
+
+    Across models we noticed a systematic issue:
+
+    \begin{itemize}
+
+        \item Predictions tended to be \textbf{lower than real prices}
+
+        \item Particularly in recent years
+
+        \item Models captured trends but \textbf{underestimated price growth}
+
+    \end{itemize}
+
+    This raised an important question:
+
+    \begin{center}
+        \textbf{Why are prices increasing faster than predicted?}
+    \end{center}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Hypothesis 1: Change in Property Types}
+
+    Possible explanation:
+
+    \begin{itemize}
+
+        \item Houses are more expensive than units
+
+        \item Perhaps recent years saw more houses sold
+
+    \end{itemize}
+
+    Result:
+
+    \begin{itemize}
+        \item No major structural change detected
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Hypothesis 2: Geographic Shift}
+
+    Maybe buyers increasingly purchased homes in expensive areas.
+
+    However:
+
+    \begin{itemize}
+
+        \item Premium postcode share remained relatively stable
+
+        \item Does not fully explain price increase
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Remaining Puzzle}
+
+    Key empirical observation:
+
+    \begin{itemize}
+
+        \item Sales volume decreased in later years
+
+        \item Yet prices continued rising
+
+    \end{itemize}
+
+    This contradicts simple supply-demand intuition.
+
+    Therefore:
+
+    \begin{center}
+        \textbf{Something outside the dataset may be influencing prices}
+    \end{center}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Introducing Macroeconomic Variables}
+
+    New hypothesis:
+
+    \begin{itemize}
+
+        \item Housing markets are influenced by macroeconomic conditions
+
+        \item Important candidates:
+
+              \begin{itemize}
+
+                  \item mortgage interest rates
+
+                  \item central bank interest rates
+
+                  \item credit availability
+
+              \end{itemize}
+
+    \end{itemize}
+
+    These variables were integrated as \textbf{exogenous features}.
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Macroeconomic Effects}
+
+    Observation:
+
+    \begin{itemize}
+
+        \item Falling mortgage rates increase affordability
+
+        \item Can drive price growth even when demand falls
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Improved Model Performance}
+
+    Including macro variables allows models to:
+
+    \begin{itemize}
+
+        \item better capture long-term dynamics
+
+        \item explain rising prices despite falling sales
+
+        \item reduce systematic underprediction
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Key Takeaways}
+
+    \begin{itemize}
+
+        \item Housing prices show strong temporal structure
+
+        \item Sales volume and property characteristics are important predictors
+
+        \item However, \textbf{micro-level data alone is insufficient}
+
+        \item Macroeconomic variables play a crucial role in price dynamics
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{Conclusion}
+
+    \begin{itemize}
+
+        \item Machine learning models can effectively forecast housing prices
+
+        \item Understanding model errors can reveal deeper insights
+
+        \item Integrating macroeconomic indicators significantly improves interpretation
+
+    \end{itemize}
+
+    Future work:
+
+    \begin{itemize}
+
+        \item incorporate additional economic indicators
+
+        \item explore spatial models
+
+        \item test alternative deep learning architectures
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}{References}
+
+    \begin{itemize}
+
+        \item Kaggle Housing Sales Dataset
+
+        \item Housing Market Forecasting Literature
+
+        \item Time Series Forecasting with Decomposition
+
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+\end{document}
+
