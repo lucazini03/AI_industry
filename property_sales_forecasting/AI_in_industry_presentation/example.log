@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.6)  6 MAR 2026 18:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.3.6)  11 MAR 2026 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1007,7 +1007,46 @@ Now handling font encoding PU ...
    defining Unicode char U+FEFF (decimal 65279)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+) (/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+)) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count338
 \lst@gtempboxa=\box76
 \lst@token=\toks48
@@ -1029,34 +1068,38 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
-Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+Package hyperref Info: Option `colorlinks' set `true' on input line 19.
  (./beamerthemeUniboTesi.sty (./beamerinnerthemeunibotesi.sty
 \beamer@unibotesi@margin=\skip65
-) (./beamerouterthemeunibotesi.sty) (./beamercolorthemeunibotesi.sty) (./beamerfontthemeunibotesi.sty)) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (./beamerouterthemeunibotesi.sty) (./beamercolorthemeunibotesi.sty) (./beamerfontthemeunibotesi.sty))
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 29.
+ (/usr/share/texmf/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count346
 \l__pdf_internal_box=\box78
 ) (./example.aux)
 \openout1 = `example.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1111,53 +1154,57 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 27.
+Package hyperref Info: Link coloring ON on input line 29.
  (./example.out) (./example.out)
 \@outlinefile=\write5
 \openout5 = `example.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 27.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 27.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 29.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 29.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 29.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 27.
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 27.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 27.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/b/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 27.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 27.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 27.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 27.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 27.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 27.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 27.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 27.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 27.
+(Font)                  OT1/lmss/b/n --> T1/lmr/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 27.
+(Font)                  T1/lmss/b/n --> T1/lmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 27.
+(Font)                  T1/lmss/m/n --> T1/lmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 27.
+(Font)                  T1/lmss/m/it --> T1/lmss/b/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 27.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1173,18 +1220,64 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 \c@lstlisting=\count353
  (./example.nav)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 29.
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
-LaTeX Font Warning: Font shape `T1/cmss/m/sc' undefined
-(Font)              using `T1/cmss/m/n' instead on input line 27.
+LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <6> not available
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 29.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 29.
+(/usr/share/texmf/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 29.
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 29.
+ (/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 29.
+ (/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 29.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 29.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 29.
+
+
+LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <14.4> not available
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 29.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 29.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 29.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 29.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 29.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 29.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 29.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}
 
 ] [2
 
@@ -1192,50 +1285,141 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [4
 
-] [5
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 121.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 121.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 121.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 121.
+ [5
 
 ] [6
 
 ]
-<../imgs/distribution_price.png, id=59, 732.336pt x 282.3348pt>
+\openout4 = `example.vrb'.
+
+ (./example.vrb
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<../imgs/avg_price_by_bedrooms.png, id=56, 431.6928pt x 323.7696pt>
+File: ../imgs/avg_price_by_bedrooms.png Graphic file (type png)
+<use ../imgs/avg_price_by_bedrooms.png>
+Package pdftex.def Info: ../imgs/avg_price_by_bedrooms.png  used on input line 11.
+(pdftex.def)             Requested size: 142.5807pt x 106.93321pt.
+<../imgs/avg_price_by_bedrooms_imputed.png, id=58, 431.6928pt x 323.7696pt>
+File: ../imgs/avg_price_by_bedrooms_imputed.png Graphic file (type png)
+<use ../imgs/avg_price_by_bedrooms_imputed.png>
+Package pdftex.def Info: ../imgs/avg_price_by_bedrooms_imputed.png  used on input line 13.
+(pdftex.def)             Requested size: 142.5807pt x 106.93321pt.
+)
+Overfull \vbox (8.41045pt too high) detected at line 162
+ []
+
+[7
+
+ <../imgs/avg_price_by_bedrooms.png> <../imgs/avg_price_by_bedrooms_imputed.png>]
+<../imgs/distribution_price.png, id=68, 732.336pt x 282.3348pt>
 File: ../imgs/distribution_price.png Graphic file (type png)
 <use ../imgs/distribution_price.png>
-Package pdftex.def Info: ../imgs/distribution_price.png  used on input line 163.
+Package pdftex.def Info: ../imgs/distribution_price.png  used on input line 183.
 (pdftex.def)             Requested size: 316.84819pt x 122.1555pt.
- [7
+ [8
 
- <../imgs/distribution_price.png>]
+ <../imgs/distribution_price.png>] [9
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}]
+<../imgs/price_distribution_remove.png, id=84, 714.9912pt x 424.4658pt>
+File: ../imgs/price_distribution_remove.png Graphic file (type png)
+<use ../imgs/price_distribution_remove.png>
+Package pdftex.def Info: ../imgs/price_distribution_remove.png  used on input line 225.
+(pdftex.def)             Requested size: 155.25734pt x 92.17159pt.
+<../imgs/price_distribution_log_transform.png, id=85, 714.9912pt x 424.4658pt>
+File: ../imgs/price_distribution_log_transform.png Graphic file (type png)
+<use ../imgs/price_distribution_log_transform.png>
+Package pdftex.def Info: ../imgs/price_distribution_log_transform.png  used on input line 225.
+(pdftex.def)             Requested size: 155.25734pt x 92.17159pt.
+ [10
+
+ <../imgs/price_distribution_remove.png> <../imgs/price_distribution_log_transform.png>] [11
+
+]
+<../imgs/monthly_trends.png, id=98, 715.473pt x 569.0058pt>
+File: ../imgs/monthly_trends.png Graphic file (type png)
+<use ../imgs/monthly_trends.png>
+Package pdftex.def Info: ../imgs/monthly_trends.png  used on input line 273.
+(pdftex.def)             Requested size: 237.63614pt x 188.988pt.
+
+Overfull \vbox (5.62772pt too high) detected at line 273
+ []
+
+[12
+
+ <../imgs/monthly_trends.png>]
+<../imgs/price_trend.png, id=105, 858.0858pt x 424.4658pt>
+File: ../imgs/price_trend.png Graphic file (type png)
+<use ../imgs/price_trend.png>
+Package pdftex.def Info: ../imgs/price_trend.png  used on input line 292.
+(pdftex.def)             Requested size: 285.16142pt x 141.05861pt.
+ [13
+
+ <../imgs/price_trend.png>]
 \openout4 = `example.vrb'.
 
  (./example.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)) [8
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <6> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 16.
 
-] [9
+Overfull \hbox (7.67706pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][] 
+ []
 
-] [10
+<../imgs/seasonal_decomposition.png, id=113, 1002.6258pt x 713.5458pt>
+File: ../imgs/seasonal_decomposition.png Graphic file (type png)
+<use ../imgs/seasonal_decomposition.png>
+Package pdftex.def Info: ../imgs/seasonal_decomposition.png  used on input line 28.
+(pdftex.def)             Requested size: 205.94939pt x 146.56091pt.
+)
+Overfull \vbox (7.41898pt too high) detected at line 327
+ []
 
-] [11
+[14
 
-] [12
+ <../imgs/seasonal_decomposition.png>] [15
 
-] [13
+]
+<../imgs/seasonal_pattern_by_month.png, id=127, 714.9912pt x 350.2686pt>
+File: ../imgs/seasonal_pattern_by_month.png Graphic file (type png)
+<use ../imgs/seasonal_pattern_by_month.png>
+Package pdftex.def Info: ../imgs/seasonal_pattern_by_month.png  used on input line 358.
+(pdftex.def)             Requested size: 237.63614pt x 116.41206pt.
 
-] [14
+Overfull \vbox (19.55177pt too high) detected at line 358
+ []
 
-] [15
+[16
 
-] [16
+ <../imgs/seasonal_pattern_by_month.png>] [17
 
-] [17
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
+<../imgs/cyclical_encoding_month.png, id=141, 504.9264pt x 394.1124pt>
+File: ../imgs/cyclical_encoding_month.png Graphic file (type png)
+<use ../imgs/cyclical_encoding_month.png>
+Package pdftex.def Info: ../imgs/cyclical_encoding_month.png  used on input line 396.
+(pdftex.def)             Requested size: 237.63614pt x 185.4794pt.
 
-] [18
+Overfull \vbox (2.11911pt too high) detected at line 396
+ []
 
-] [19
+[18
+
+ <../imgs/cyclical_encoding_month.png>] [19
 
 ] [20
 
@@ -1245,23 +1429,165 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 
 ] [23
 
-] [24
+]
+<../imgs/acf.png, id=175, 455.301pt x 338.2236pt>
+File: ../imgs/acf.png Graphic file (type png)
+<use ../imgs/acf.png>
+Package pdftex.def Info: ../imgs/acf.png  used on input line 478.
+(pdftex.def)             Requested size: 205.94939pt x 152.98883pt.
+ [24
 
-] [25
+ <../imgs/acf.png>] [25
 
-] [26
+]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 533.
 
-] [27
+Overfull \hbox (6.24762pt too wide) in paragraph at lines 533--533
+ [] 
+ []
 
-] [28
+[26
 
-] [29
+]
+<../imgs/random_forest_all_no_macro.png, id=196, 740.0448pt x 381.5856pt>
+File: ../imgs/random_forest_all_no_macro.png Graphic file (type png)
+<use ../imgs/random_forest_all_no_macro.png>
+Package pdftex.def Info: ../imgs/random_forest_all_no_macro.png  used on input line 552.
+(pdftex.def)             Requested size: 221.79276pt x 114.3601pt.
+ [27
 
-] [30
+ <../imgs/random_forest_all_no_macro.png>]
+<../imgs/all_features_importance.png, id=203, 557.2017pt x 270.2898pt>
+File: ../imgs/all_features_importance.png Graphic file (type png)
+<use ../imgs/all_features_importance.png>
+Package pdftex.def Info: ../imgs/all_features_importance.png  used on input line 562.
+(pdftex.def)             Requested size: 301.0048pt x 146.01205pt.
+ [28
 
-] [31
+ <../imgs/all_features_importance.png>]
+<../imgs/correlation_sales_price.png, id=210, 570.2103pt x 354.123pt>
+File: ../imgs/correlation_sales_price.png Graphic file (type png)
+<use ../imgs/correlation_sales_price.png>
+Package pdftex.def Info: ../imgs/correlation_sales_price.png  used on input line 573.
+(pdftex.def)             Requested size: 205.94939pt x 127.90024pt.
 
-] [32
+Overfull \vbox (6.48438pt too high) detected at line 573
+ []
+
+[29
+
+ <../imgs/correlation_sales_price.png>]
+File: ../imgs/monthly_trends.png Graphic file (type png)
+<use ../imgs/monthly_trends.png>
+Package pdftex.def Info: ../imgs/monthly_trends.png  used on input line 583.
+(pdftex.def)             Requested size: 190.11084pt x 151.1852pt.
+ [30
+
+]
+<../imgs/premium_zone.png, id=222, 726.3135pt x 396.0396pt>
+File: ../imgs/premium_zone.png Graphic file (type png)
+<use ../imgs/premium_zone.png>
+Package pdftex.def Info: ../imgs/premium_zone.png  used on input line 594.
+(pdftex.def)             Requested size: 237.63614pt x 129.5755pt.
+ [31
+
+ <../imgs/premium_zone.png>]
+<../imgs/feature_correlation_heatmap_monthly.png, id=230, 561.297pt x 491.9178pt>
+File: ../imgs/feature_correlation_heatmap_monthly.png Graphic file (type png)
+<use ../imgs/feature_correlation_heatmap_monthly.png>
+Package pdftex.def Info: ../imgs/feature_correlation_heatmap_monthly.png  used on input line 605.
+(pdftex.def)             Requested size: 205.94939pt x 180.49051pt.
+ [32
+
+ <../imgs/feature_correlation_heatmap_monthly.png>]
+<../imgs/macro_trends_over_time_with_sales.png, id=237, 1003.8303pt x 642.4803pt>
+File: ../imgs/macro_trends_over_time_with_sales.png Graphic file (type png)
+<use ../imgs/macro_trends_over_time_with_sales.png>
+Package pdftex.def Info: ../imgs/macro_trends_over_time_with_sales.png  used on input line 616.
+(pdftex.def)             Requested size: 285.16142pt x 182.51077pt.
+ [33
+
+ <../imgs/macro_trends_over_time_with_sales.png>] [34
+
+]
+<../imgs/best_features.png, id=249, 740.0448pt x 381.5856pt>
+File: ../imgs/best_features.png Graphic file (type png)
+<use ../imgs/best_features.png>
+Package pdftex.def Info: ../imgs/best_features.png  used on input line 642.
+(pdftex.def)             Requested size: 237.63614pt x 122.5291pt.
+ [35
+
+ <../imgs/best_features.png>]
+<../imgs/best_features_importance.png, id=256, 568.7649pt x 270.2898pt>
+File: ../imgs/best_features_importance.png Graphic file (type png)
+<use ../imgs/best_features_importance.png>
+Package pdftex.def Info: ../imgs/best_features_importance.png  used on input line 652.
+(pdftex.def)             Requested size: 301.0048pt x 143.04669pt.
+ [36
+
+ <../imgs/best_features_importance.png>] [37
+
+]
+<../imgs/hybrid_forecast_none_all_no_sales_count.png, id=270, 741.0084pt x 380.1402pt>
+File: ../imgs/hybrid_forecast_none_all_no_sales_count.png Graphic file (type png)
+<use ../imgs/hybrid_forecast_none_all_no_sales_count.png>
+Package pdftex.def Info: ../imgs/hybrid_forecast_none_all_no_sales_count.png  used on input line 703.
+(pdftex.def)             Requested size: 237.63614pt x 121.90836pt.
+ [38
+
+ <../imgs/hybrid_forecast_none_all_no_sales_count.png>]
+<../imgs/hybrid_linear_coefs_none_all_no_sales_count.png, id=277, 569.9694pt x 280.4076pt>
+File: ../imgs/hybrid_linear_coefs_none_all_no_sales_count.png Graphic file (type png)
+<use ../imgs/hybrid_linear_coefs_none_all_no_sales_count.png>
+Package pdftex.def Info: ../imgs/hybrid_linear_coefs_none_all_no_sales_count.png  used on input line 726.
+(pdftex.def)             Requested size: 174.26747pt x 85.73598pt.
+<../imgs/hybrid_importance_none_all_no_sales_count.png, id=278, 556.479pt x 268.8444pt>
+File: ../imgs/hybrid_importance_none_all_no_sales_count.png Graphic file (type png)
+<use ../imgs/hybrid_importance_none_all_no_sales_count.png>
+Package pdftex.def Info: ../imgs/hybrid_importance_none_all_no_sales_count.png  used on input line 726.
+(pdftex.def)             Requested size: 174.26747pt x 84.19006pt.
+ [39
+
+ <../imgs/hybrid_linear_coefs_none_all_no_sales_count.png> <../imgs/hybrid_importance_none_all_no_sales_count.png>] [40
+
+] [41
+
+]
+<../imgs/lstm_output.png, id=297, 858.5676pt x 426.393pt>
+File: ../imgs/lstm_output.png Graphic file (type png)
+<use ../imgs/lstm_output.png>
+Package pdftex.def Info: ../imgs/lstm_output.png  used on input line 778.
+(pdftex.def)             Requested size: 285.16142pt x 141.62099pt.
+ [42
+
+ <../imgs/lstm_output.png>]
+<../imgs/lstm_shap.png, id=304, 570.933pt x 281.853pt>
+File: ../imgs/lstm_shap.png Graphic file (type png)
+<use ../imgs/lstm_shap.png>
+Package pdftex.def Info: ../imgs/lstm_shap.png  used on input line 786.
+(pdftex.def)             Requested size: 285.16142pt x 140.77992pt.
+ [43
+
+ <../imgs/lstm_shap.png>] [44
+
+] [45
+
+] [46
+
+] [47
+
+]
+<../imgs/sarimax_forecast_none_all_and_macro.png, id=333, 859.0494pt x 424.4658pt>
+File: ../imgs/sarimax_forecast_none_all_and_macro.png Graphic file (type png)
+<use ../imgs/sarimax_forecast_none_all_and_macro.png>
+Package pdftex.def Info: ../imgs/sarimax_forecast_none_all_and_macro.png  used on input line 902.
+(pdftex.def)             Requested size: 285.16142pt x 140.90317pt.
+ [48
+
+ <../imgs/sarimax_forecast_none_all_and_macro.png>] [49
+
+] [50
 
 ]
 \tf@nav=\write6
@@ -1278,26 +1604,22 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
 Package rerunfilecheck Info: File `example.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24500 strings out of 476182
- 455830 string characters out of 5795596
- 1936975 words of memory out of 5000000
- 45930 multiletter control sequences out of 15000+600000
- 584022 words of font info for 94 fonts, out of 8000000 for 9000
+ 25158 strings out of 476182
+ 474602 string characters out of 5795596
+ 1939975 words of memory out of 5000000
+ 46518 multiletter control sequences out of 15000+600000
+ 654652 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,15n,107p,552b,1357s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/lucazini03/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/lucazini03/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </home/lucazini03/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/lucazini03/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk> </home/lucazini03/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600pk> </home/lucazini03/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1200.600pk> </home/lucazini03/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1440.600pk> </home/lucazini03/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1000.600pk> </home/lucazini03/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss1440.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on example.pdf (32 pages, 167938 bytes).
+ 101i,17n,107p,563b,1667s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on example.pdf (50 pages, 2026572 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
- 65 named destinations out of 1000 (max. 500000)
- 60 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 312 compressed objects within 4 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,32 @@
-\frametitle{Distribution of property prices}
-\begin{lstlisting}[language=Python, basicstyle=\small\ttfamily]
-avg_price_by_type = df.groupby('type')['price']. \
-    mean().sort_values(ascending=False)
-    \end{lstlisting}
+\frametitle{Seasonal Decomposition}
+
+    \begin{columns}
+        \begin{column}{0.35\textwidth}
+            \textbf{Additive decomposition:}
+            \[
+                y_t = T_t + S_t + R_t
+            \]
+            \begin{itemize}
+                \item $T_t$: trend
+                \item $S_t$: seasonal
+                \item $R_t$: residual
+            \end{itemize}
+            \vspace{0.5em}
+            \begin{lstlisting}[language=Python, basicstyle=\tiny\ttfamily]
+from statsmodels.tsa.seasonal \
+    import seasonal_decompose
+
+decomp = seasonal_decompose(
+    series,
+    model='additive',
+    period=12
+)
+            \end{lstlisting}
+        \end{column}
+        \begin{column}{0.65\textwidth}
+            \begin{center}
+                \includegraphics[width=\textwidth]{../imgs/seasonal_decomposition.png}
+            \end{center}
+        \end{column}
+    \end{columns}
+

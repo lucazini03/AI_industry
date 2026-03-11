@@ -34,12 +34,12 @@
 
   \else
 
-    \begin{beamercolorbox}[wd=0.05\paperwidth, ht=0.15\paperwidth, dp=0ex]{titleline}%
+    \begin{beamercolorbox}[wd=0.05\paperwidth, ht=0.10\paperwidth, dp=0ex]{titleline}%
     \end{beamercolorbox}
 
     \begin{beamercolorbox}[wd=0.8\paperwidth, ht=.1ex, dp=.1ex]{verticalline}%
     \end{beamercolorbox}
-    \vspace{0.10\paperwidth}
+    \vspace{0.05\paperwidth} % was 0.10\paperwidth (adjust to taste)
 
   \fi
 }
@@ -75,16 +75,13 @@
   \advance \@tempdima by \beamer@rightmargin %
 
   \vskip -.5 \beamer@leftmargin %
-  \vspace{-0.25\paperwidth}
+  \vspace{-0.15\paperwidth} % was -0.25\paperwidth; tune this value
 
   \begin {beamercolorbox}[ sep=\beamer@leftmargin ,wd=\the\@tempdima]{}
     \strut \Large \insertframetitle \strut \par
-    \ifx\insertframesubtitle\@empty%
-    \else%
-      \strut \small \insertframesubtitle \strut \par%
-    \fi%
-    \end {beamercolorbox}
-  }
+    % ...existing code...
+  \end {beamercolorbox}
+}
 
 
 % I don't like navigation symbols, so I will remove them
